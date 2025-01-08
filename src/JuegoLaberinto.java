@@ -23,8 +23,7 @@ public class JuegoLaberinto {
         byte posicionJugador = 0;
         byte opcionSala = -1;
         byte opcionAvz = -1;
-        String mensBienvenida = "||| Bienvenid@ al juego del Laberinto |||\n" + "Explora el laberinto hasta llegar a la sala del tesoro para ganar la partida\n" + "Comencemos...\n";
-        String[] posicionesJugador = {"de los espejos", "de los susurros", null, "de las sombras"};
+        String mensBienvenida = "||| Bienvenid@ al juego del Laberinto |||\n" + "Reglas del juego:\n" + "1. Explora las 4 salas del laberinto hasta llegar a la sala del tesoro para ganar la partida.\n" + "2. Empezarás con 100 puntos de energía que podrá aumentar o disminuir conforme vayas inspeccionando cada sala.\n" + "3. Si tus puntos de energía llegan a 0 o menos, pierdes la partida.\n" + "Comencemos...\n";        String[] posicionesJugador = {"de los espejos", "de los susurros", null, "de las sombras"};
         String opcSala = "¿Qué deseas hacer?\n" + "Opción 1: Avanzar a la siguiente sala\n" + "Opción 2: Inspeccionar la sala actual\n" + "Opción 3: Salir del juego";
         String opcAvz = "Sigamos explorando entonces...\n\n¿Hacia dónde quieres ir?\n" + "Opción 1: A la izquierda\n" + "Opción 2: A la derecha";
         String eventIncrEne = "¡Genial! Has encontrado una bolsa llena de monedas, tu energía se ha incrementado en 10 puntos.";
@@ -45,7 +44,7 @@ public class JuegoLaberinto {
 
         while (juegoActivo) {
 
-            if (energiaJugador >= 1 && posicionJugador == 2) {
+            if (posicionJugador == 2) {
                 System.out.println(hasGanado);
                 juegoActivo = false;
 
