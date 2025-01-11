@@ -21,7 +21,7 @@ public class JuegoLaberintoAmpliado {
         boolean juegoActivo = true;
         byte posicionJugador = 0, opcionSala = 0, opcionAvz = 0;
         double valorRandomEventSala;
-        int energiaJugador = 30;
+        int energiaJugador = 100;
         int[] energiaSalas = new int[4];
         String mensBienvenida = "||| Bienvenid@ al juego del Laberinto |||\n" + "Reglas del juego:\n" + "1. Explora las 4 salas del laberinto hasta llegar a la sala del tesoro con al menos 30 puntos de energía para ganar la partida.\n" + "2. Empezarás con 100 puntos de energía.\n" + "3. Cada sala tendrá una energía de entre -20 y 20 puntos asignada al principio de cada partida, que se sumará o restará de tu energía. Podrás consultar esta información si lo deseas.\n" + "4. También podrás ganar 10 puntos o perder 15 puntos de energía al inspeccionar una sala.\n" + "5. Si te quedas sin puntos de energía, perderás la partida.\n" + "Comencemos...";
         String[] posicionesJugador = {"de los espejos", "de los susurros", "del tesoro", "de las sombras"};
